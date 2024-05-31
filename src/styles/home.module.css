@@ -1,0 +1,66 @@
+.blocks {
+  position: absolute;
+  z-index: 1000000;
+}
+.chooseBlock {
+  margin-top: 55vh;
+  /* transform: rotate(180deg); */
+  position: fixed;
+  top: 0;
+  right: 2%;
+}
+.chooseBlock li {
+  position: relative;
+  height: 20px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+}
+
+.chooseBlock .page-item .page-link {
+  position: relative !important;
+}
+.padinationDiv {
+  position: relative;
+  height: 100px;
+}
+.chooseBlock li  .curen {
+  visibility: hidden;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  height: 6px;
+  width: 6px;
+  border: 0;
+  background: white;
+  margin: -2px 0 0 -2px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.chooseBlock li  .point {
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  height: 6px;
+  width: 6px;
+  border: 0;
+  background: white;
+  margin: -2px 0 0 -2px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.chooseBlock li .activePoint {
+  transform: scale(1.8);
+  border: 1px solid rgba(208, 33, 39, 1);
+  background-color: transparent;
+}
+.ftDiv{
+  position: relative;
+  
+}

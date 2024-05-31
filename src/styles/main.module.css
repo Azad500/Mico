@@ -1,0 +1,76 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+.explore{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    margin-bottom: 50px;
+    animation: scrolldown 1s linear infinite;
+}
+.logoText{
+    font-size: 130px;
+    color:white;
+    animation: fadeInOut 10s infinite;
+}
+.logoText.hidden {
+    animation: none;
+     display: none;
+  }
+.video {
+    width: 100%;
+    height: 100vh;
+    --media-object-fit: cover;
+}
+.expText{
+    color: #707070;
+    margin-bottom: 20px;
+}
+@keyframes scrolldown{
+    0% {
+        bottom: 0;
+    }
+    
+    50% {
+        bottom: 10px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+.logoSvg{
+    width: 501px;
+    height: 123px;
+}
+.animDiv{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh
+}
+.logoText, .logoSvg{
+    
+    position: absolute;
+    /* left: 0; */
+    
+}
+@keyframes fadeInOut {
+    0% {
+      display: none;
+    }
+    50% {
+      display: block;
+    }
+    100% {
+     display: none;
+    }
+  }
+  

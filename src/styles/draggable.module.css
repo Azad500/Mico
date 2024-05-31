@@ -1,0 +1,86 @@
+.main {
+  padding: 0;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: 11111111;
+  width: 100%;
+  padding-left: 10%;
+  height: 300px;
+}
+.items {
+  position: relative;
+  width: 100%;
+  /* height: 100%; */
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  will-change: transform;
+  user-select: none;
+  cursor: grab;
+  overflow-x: hidden;
+}
+.items.active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+/* .customCursor{
+    position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; 
+  background-color: black;
+  z-index: 999999;
+  pointer-events: none;
+} */
+
+.item {
+  display: inline-block;
+  padding-left: 30px;
+  height: 200px;
+  min-height: 200px;
+}
+.item img {
+  max-width: 150px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.item p {
+  color: white;
+  font-size: 14px;
+}
+.doubleIndex {
+  transform: translateY(50px);
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .item {
+    margin-top: 20px;
+  }
+  .items {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 600px;
+  }
+  .item img {
+    max-width: 200px;
+  }
+  .items::-webkit-scrollbar {
+    display: none;
+  }
+  .main {
+    height: auto;
+  }
+  .doubleIndex {
+    transform: translateY(0px);
+  }
+}

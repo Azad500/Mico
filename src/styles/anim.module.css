@@ -1,0 +1,91 @@
+.brandPage {
+  display: none;
+}
+.bckg {
+  display: none;
+}
+.mobileSvg,
+.mobileSvg1 {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .brandPage {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0% 5%;
+    overflow: hidden;
+    z-index: 2;
+  }
+  .brandPageEl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .mobileSvg,
+  .mobileSvg1 {
+    display: block;
+  }
+  .mobileSvg {
+    margin-top: -70px;
+  }
+  .explore {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 50px;
+  }
+  .explore svg {
+    margin-top: 10px;
+  }
+  .bckg {
+    display: block;
+  }
+  .bckg img {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    object-fit: cover;
+  }
+  .leftImg svg,
+  .rightImg svg {
+    width: 180px;
+    height: 150px;
+  }
+  .rightImg {
+    position: absolute;
+    bottom: 17%;
+    left: 5%;
+  }
+  .leftImg {
+    position: absolute;
+    top: 28%;
+    right: 5%;
+  }
+  .logoImg svg {
+    width: 122px;
+    height: 122px;
+  }
+
+  .mobileSvg {
+    display: block;
+  }
+}
+
+.brand {
+  width: 100vw;
+  height: 100vh;
+}

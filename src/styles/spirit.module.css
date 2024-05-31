@@ -1,0 +1,100 @@
+.spiritSection{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    padding: 10% 5%;
+    background: url(../../public/assets/images/Rectangle\ 4.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/* .upText, .bottomText{
+    font-size: 80px;
+    text-align: center;
+    line-height: 1;
+}
+.upText p, .animFor p{
+    font-size: 130px;
+    font-weight: bold;
+    color: white;
+}
+.animFor {
+    height: 120px;
+    overflow: hidden;
+} */
+.upText span:first-child{
+    color: rgba(208, 33, 39, 1);
+    font-size: 50px;
+    font-weight: 700;
+    /* line-height: 39px; */
+}
+
+.upText span:last-child{
+    color:white;
+    font-size: 50px;
+    font-weight: 700;
+    /* line-height: 39px; */
+}
+.bottomText{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.aboutMagicOne{
+    display: none;
+}
+.bottomText p{
+   color:rgba(208, 33, 39, 1);
+   font-weight: 500;
+   font-size: 42px;
+}
+.bottomText span{
+    color:white;
+    width: 700px;
+    font-weight: 300;
+    font-size: 33px;
+ }
+ @media only screen and (max-width: 800px) {
+    .bottomText{
+        margin-top: 0;
+    }
+ }
+ @media only screen and (max-width: 768px) {
+    .upText  span:first-child, .upText span:last-child{
+      font-size: 27px;
+    }
+    .aboutMagic{
+        display: none;
+    }
+    .aboutMagicOne{
+        display: block;
+        font-weight: 500;
+        color: white;
+   font-size: 21px;
+   margin-bottom: 25px;
+    }
+    .bottomText span{
+        font-size: 21px;
+        margin-top: 40px;
+    }
+    .spiritSection{
+        padding-top: 150px;
+    }
+    .oneSpan{
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+ }
+ @media only screen and (max-width: 300px) {
+    .bottomText span{
+        margin-top: 20px;
+    }
+    .oneSpan{
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .spiritSection{
+        padding-top: 120px;
+    }
+ }

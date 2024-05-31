@@ -1,0 +1,82 @@
+.movieDetail {
+  padding: 10%;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 100px;
+}
+.movieDetailElement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.movieDetailLeft img {
+  object-fit: cover;
+}
+.movieDetailRight {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 250px;
+}
+.movieDetailRight h1 {
+  color: rgba(208, 33, 39, 1);
+  font-size: 24px;
+  font-weight: 700;
+}
+.movieDetailRightEl {
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+.movieDetailRightEl p {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 500;
+  width: 300px;
+}
+.movieDetailRightEl p:last-child {
+  text-align: end;
+}
+.movieDetailRightDetail {
+  margin-top: 25px;
+}
+.descriptionElement {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.descriptionElement p {
+  width: 300px;
+  font-size: 16px;
+}
+@media screen and (min-width: 992px) {
+  .movieDetailElement {
+    flex-direction: unset;
+    padding-top: 0px;
+  }
+  .movieDetailRight {
+    margin-left: 10%;
+    width: 40%;
+  }
+  .movieDetailRight h1 {
+    font-size: 32px;
+  }
+  .movieDetailRightEl p {
+    font-size: 21px;
+  }
+  .descriptionElement {
+    display: block;
+    margin-top: 50px;
+  }
+  .descriptionElement p {
+    width: 80%;
+    font-size: 21px;
+  }
+  .descriptionElement p:first-child {
+    padding-bottom: 20px;
+  }
+}

@@ -1,0 +1,153 @@
+.partner{
+  /* background-color: black; */
+  width: 100vw;
+  height: 100vh;
+ padding: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position: relative;
+
+  display: inline-block;
+  width: 100vw;
+  height: 100vh;
+  background: url(../../public/assets/images/Rectangle\ 7.png) no-repeat center
+    center fixed;
+  background-size: cover;
+  background-position: center center;
+ 
+  position: absolute;
+}
+.partnerLeft{
+    width: 40%;
+   
+}
+.partnerLeft h1{
+    color: #cecece;
+    font-size: 82px;
+    line-height: 1.2;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.partnerLeft p{
+    color: #cecece;
+    font-size: 22px;
+    line-height: 1.55;
+}
+.partnerRight{
+    position: absolute;
+    right: 5%;
+    top:0;
+    display: flex;
+    height: 700px;
+    gap:20px;
+    overflow-x: hidden !important;
+    overflow-y: scroll;
+    scroll-behavior: smooth; 
+    padding-top: 20%;
+    z-index: 11111111111111111111111111111111111;
+}
+.partnerRight::-webkit-scrollbar {
+    display: none;
+  }
+.rightDiv{
+    display: flex;
+    flex-direction: column;
+   
+}
+.rightDiv div{
+    margin-bottom: 20px;
+   position: relative;
+    background-color: #262626;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+    
+}
+.rightDiv div:hover{
+  transition: 0.5s ease;
+    background-color:  #d0a665;
+   
+}
+.threeDiv{
+    margin-top: 100px;
+}
+.twoDiv{
+    margin-top: 50px;
+}
+
+.movieRight{
+    display: flex;
+    justify-content: flex-end;
+}
+.korean, .foreign{
+    background-color: 
+    rgba(208, 33, 39, 1);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+.korean{
+    margin-right: 50px;
+}
+
+
+@media only screen and (max-width: 768px) {
+   .movieRight{
+    flex-direction: column;
+    align-items: center;
+   }
+    .korean{
+        margin-right: 0;
+        width: 174px;
+        height: 174px;
+        margin-bottom: 66px;
+    }
+    .foreign{
+        width: 174px;
+        height: 174px;
+    }
+    .partnerLeft{
+        width: auto;
+        text-align: center;
+    }
+    .partnerLeft h1{
+        font-size: 27px;
+        margin-bottom: 20px;
+    }
+    .partnerLeft p{
+        font-size: 15px;
+        color:rgba(208, 33, 39, 1);
+       margin-bottom: 66px;
+    }
+    .partner{
+        padding-top:150px;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+   .partnerLeft p{
+    margin-bottom: 20px;
+   }
+   .korean{
+    margin-bottom: 30px;
+   }
+    .partner{
+        padding-top: 100px;
+    }
+    
+  }
