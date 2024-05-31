@@ -113,8 +113,8 @@
 .movies {
   z-index: 111111;
   background-color: rgba(208, 33, 39, 1);
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   display: flex;
   align-items: flex-end;
@@ -135,7 +135,7 @@
 }
 .movieTitle {
   color: white;
-  font-size: 21px;
+  font-size: 16px;
   font-weight: 700;
   margin-top: 40px;
 }
@@ -173,6 +173,12 @@
     text-align: center;
     align-items: center;
   }
+  .animations,
+  .series,
+  .movies {
+    width: 100px;
+    height: 100px;
+  }
   .movie {
     padding-top: 100px;
   }
@@ -201,14 +207,5 @@
 
   .seriesSpan {
     display: none;
-  }
-  .animations,
-  .series,
-  .movies {
-    width: 100px;
-    height: 100px;
-  }
-  .movieTitle {
-    font-size: 16px;
   }
 }
