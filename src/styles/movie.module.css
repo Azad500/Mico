@@ -173,12 +173,6 @@
     text-align: center;
     align-items: center;
   }
-  .animations,
-  .series,
-  .movies {
-    width: 100px;
-    height: 100px;
-  }
   .movie {
     padding-top: 100px;
   }
@@ -211,8 +205,8 @@
   .animations,
   .series,
   .movies {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
   }
   .movieTitle {
     font-size: 16px;
