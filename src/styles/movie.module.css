@@ -189,7 +189,9 @@
     margin-block-start: 0em;
     line-height: 0;
     margin-block-end: 0em;
-    margin-top: -20px;
+  }
+  .bottomDiv {
+    margin-top: 20px;
   }
   .mobileSpan {
     line-height: 0;
